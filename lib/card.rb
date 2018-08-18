@@ -5,7 +5,7 @@ class Card
               :suit
 
   def initialize (value, suit)
-    @value  = value
-    @suit   = suit
+    @value  = value.capitalize
+    @suit   = suit.capitalize
   end
 end
