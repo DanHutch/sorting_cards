@@ -1,6 +1,7 @@
 ## card.rb
 
 class Card
+
   attr_reader :value,
               :suit
 
@@ -8,4 +9,5 @@ class Card
     @value  = value.capitalize
     @suit   = suit.capitalize
   end
+
 end
