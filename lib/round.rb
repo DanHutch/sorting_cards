@@ -20,7 +20,7 @@ class Round
 
   def record_guess(guess_hash)
     guess_card = "#{guess_hash[:value]} of #{guess_hash[:suit]}"
-    guess = Guess.new(guess_card, current_card)
+    guess = Guess.new(current_card, guess_card)
     @guesses << guess
     deck.cards.rotate!(1)
     guess
