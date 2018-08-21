@@ -12,21 +12,21 @@ class Deck
     @cards.count
   end
 
-  def sort(sort_arg)
+  def sort
     deck_length = count
 
     loop do
       swapped = false
 
       (deck_length - 1).times do |index|
-        if sort_arg[index] > sort_arg[index + 1]
-          sort_arg[index], sort_arg[index + 1] = sort_arg[index + 1], array[index]
+        if @cards[index].card_id > @cards[index + 1].card_id
+          @cards[index], @cards[index + 1] = @cards[index + 1], @cards[index]
           swapped = true
         end
       end
       break if not swapped
     end
-    sort_arg
+    @cards
   end
 
 end

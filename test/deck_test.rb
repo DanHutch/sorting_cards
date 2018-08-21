@@ -42,5 +42,4 @@ class DeckTest < Minitest::Test
     assert_equal([card_1, card_3, card_2, card_5, card_4], deck.sort)
   end
 
-
 end
