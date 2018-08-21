@@ -1,7 +1,6 @@
 ## guess.rb
 
 require 'pry'
-require './lib/card.rb'
 
 class Guess
   attr_reader :response,
@@ -25,8 +24,3 @@ class Guess
   end
 
 end
-
-# card = Card.new("2", "Diamonds")
-# guess = Guess.new("2 of Diamonds", card)
-#
-# binding.pry
