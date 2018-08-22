@@ -1,6 +1,5 @@
 ## round
 
-require 'pry'
 require './lib/guess'
 require './lib/deck'
 
@@ -15,7 +14,6 @@ class Round
 
   def current_card
     deck.cards.first
-    # binding.pry
   end
 
   def record_guess(guess_hash)

@@ -1,12 +1,12 @@
 ## guess.rb
-
+require './lib/card'
 require 'pry'
 
 class Guess
   attr_reader :response,
               :card
 
-  def initialize(card, response)
+  def initialize(response, card)
     @response = response
     @card = "#{card.value} of #{card.suit}"
   end
