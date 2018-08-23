@@ -6,13 +6,8 @@ class Card
               :card_id
 
   def initialize(value, suit)
-    @value    = value.capitalize
-    @suit     = suit.capitalize
-    @card_id  = set_card_value_id + set_card_suit_id
-  end
 
-  def set_card_value_id
-    value_ids_hash = {
+    card_ids_hash = {
       "2"     => 2,
       "3"     => 6,
       "4"     => 10,
@@ -25,19 +20,17 @@ class Card
       "Jack"  => 38,
       "Queen" => 42,
       "King"  => 46,
-      "Ace"   => 50
-    }
-    value_ids_hash[@value]
-  end
-
-  def set_card_suit_id
-    suit_ids = {
+      "Ace"   => 50,
       "Clubs"     => 0,
       "Diamonds"  => 1,
       "Hearts"    => 2,
       "Spades"    => 3
     }
-    suit_ids[@suit]
+
+    @value    = value.capitalize
+    @suit     = suit.capitalize
+    @card_id  = card_ids_hash[value] + card_ids_hash[suit]
+
   end
 
 end
