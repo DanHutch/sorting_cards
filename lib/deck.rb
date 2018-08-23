@@ -1,4 +1,4 @@
-## deck
+## deck.rb
 
 class Deck
   attr_reader :cards
@@ -25,6 +25,5 @@ class Deck
     end
     @cards
   end
-
 
 end

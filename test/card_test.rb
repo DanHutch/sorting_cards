@@ -1,4 +1,4 @@
-## card_test
+## card_test.rb
 
 require 'minitest/autorun'
 require 'minitest/pride'
@@ -19,6 +19,11 @@ class CardTest < Minitest::Test
   def test_it_has_a_suit
     card = Card.new("Ace", "Spades")
     assert_equal("Spades", card.suit)
+  end
+
+  def test_it_has_a_card_id
+    card = Card.new("Ace", "Spades")
+    assert_equal(53, card.card_id)
   end
 
 end

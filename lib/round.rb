@@ -1,7 +1,4 @@
-## round
-
-require './lib/guess'
-require './lib/deck'
+## round.rb
 
 class Round
   attr_reader :deck,
