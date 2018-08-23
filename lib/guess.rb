@@ -1,6 +1,4 @@
 ## guess.rb
-require './lib/card'
-require 'pry'
 
 class Guess
   attr_reader :response,

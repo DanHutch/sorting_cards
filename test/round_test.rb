@@ -1,4 +1,4 @@
-## round_test
+## round_test.rb
 
 require 'minitest/autorun'
 require 'minitest/pride'

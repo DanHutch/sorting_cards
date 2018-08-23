@@ -1,4 +1,4 @@
-## deck_test
+## deck_test.rb
 
 require 'minitest/autorun'
 require 'minitest/pride'
